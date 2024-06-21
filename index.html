@@ -4,36 +4,44 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="style.medium.css">
-    <link rel="stylesheet" href="breakpoints.css">
-    <link rel="stylesheet" href="lightbox.css">
-    <link rel="stylesheet" href="slide.css">
+    <title>Radelberger in der ganzen Welt</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/style.medium.css">
+    <link rel="stylesheet" href="css/breakpoints.css">
+    <link rel="stylesheet" href="css/lightbox.css">
+    <link rel="stylesheet" href="css/slide.css">
 </head>
 
 <body>
     <header>
-        <nav class="navmain" id="navmain">
+        <div class="navmain" id="navmain">
             <ul>
-                <li>Vorstellung</li>
-                <li>Reiseziel</li>
-                <li>Impressionen</li>
+                <li><a href="#">Vorstellung</a></li>
+                <li><a href="#">Reiseziel</a></li>
+                <li><a href="#">Impressionen</a></li>
             </ul>
-        </nav>
-        <div class="slider" id="header">
+        </div>
+        <div class="slider" id="slider">
             <div class="slide">
-                <img src="./images/header.jpg" alt="Slide 1">
+                <img src="./images/header1.jpg" alt="Slide 1">
             </div>
             <div class="slide">
                 <img src="./images/header3.jpg" alt="Slide 2">
             </div>
-            <div class="slide slide2">
-                <img src="./images/haeder2.JPEG" alt="Slide 2">
+            <div class="slide">
+                <img src="./images/header.jpg" alt="Slide 1">
             </div>
 
-            <script src="./js/slide.js"></script>
-            <script src="./js/slide-mobil.js"></script>
+            <div class="slide">
+                <img src="./images/header2.jpg" alt="Slide 2">
+            </div>
+            <script src="./js/sliderjanis.js"></script>
+            <!-- <script src="./js/slide.js"></script>
+            <script src="./js/slide-mobil.js"></script> -->
+            <div class="pfeile">
+                <img onclick="umschalten(-1)" src="./images/icons/pfeil.svg" alt="" class="pfeil links">
+                <img onclick="umschalten(1)" src="./images/icons/pfeil.svg" alt="" class="pfeil rechts">
+            </div>
         </div>
     </header>
     <section class="section1">
@@ -69,7 +77,7 @@
                     abwechslungsreichen und erfüllenden Freizeitaktivität, die Körper und Geist gleichermaßen gut tut.
                 </p>
             </div>
-            <div class="image-container center col col-10 giant-col-4 suffix-1">
+            <div class="image-container center col col-10 medium-col-6 giant-col-4 suffix-1">
                 <img class="lightbox" src="./images/moritz-auf-dem-rad.jpg" alt="">
             </div>
 
@@ -82,9 +90,9 @@
         </div>
     </section>
     <div class="mobilnav">
-        <img src="./images/navicon.png" alt="burger icon" id="navbtn">
+        <img src="./images/icons/navicon.png" alt="burger icon" id="navbtn">
         <ul class="navlist " id="navlistmobil">
-            <img src="./images/navicon.png" alt="burger icon" id="navbtnclose">
+            <img src="./images/icons/navicon.png" alt="burger icon" id="navbtnclose">
             <li>Vorstellung</li>
             <li>Reiseziel</li>
             <li>Impressionen</li>

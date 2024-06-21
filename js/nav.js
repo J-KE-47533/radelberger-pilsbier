@@ -17,13 +17,3 @@ menubutton.onclick = function () {
 navclose.onclick = function () {
     navlist.style.right = "-100%";
 }
-
-window.onscroll = function () {
-    navscroll.style.padding = "1rem 0";
-}
-
-if (bottomPosition >= 500) {
-    navscroll.style.padding = "2rem 0";
-} else {
-    navscroll.style.padding = "1rem 0";
-}

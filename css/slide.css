@@ -1,0 +1,46 @@
+
+.slider {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    touch-action: pan-y;
+}
+.slide {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    opacity: 0;
+    transition: opacity 1.5s ease-in-out;
+}
+.slide img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.slide h1 {
+    position: absolute;
+    bottom: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+    margin: 0;
+    padding: 10px;
+    background: rgba(0, 0, 0, 0.5);
+}
+.slide.active {
+    opacity: 1;
+}
+
+.slide2 img{
+object-position: 85% 20%;
+}
+
+@media screen and (min-width: 760px) {
+    .slide2 img{
+        object-position: 50% 20%;
+        }
+}
+
+
+
