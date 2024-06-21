@@ -226,9 +226,12 @@ img {
     z-index: -1;
 }
 
-
-
 .center {
     display: flex !important;
     margin: auto;
+}
+
+.gallery img{
+    max-height: 25rem;
+    border-radius: 10px;
 }
