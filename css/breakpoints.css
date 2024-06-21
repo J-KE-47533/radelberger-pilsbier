@@ -7,57 +7,101 @@
 }
 
 .col-2 {
-
+    text-align: center;
+    width: 100%;
+    padding: 0 1rem;
+    overflow: hidden;
+    display: block;
     max-width: calc((100%/12*2) - 32px);
 }
 
 .col-3 {
-
+    text-align: center;
+    width: 100%;
+    padding: 0 1rem;
+    overflow: hidden;
+    display: block;
     max-width: calc((100%/12*3) - 32px);
 }
 
 .col-4 {
-
+    text-align: center;
+    width: 100%;
+    padding: 0 1rem;
+    overflow: hidden;
+    display: block;
     max-width: calc((100%/12*4) - 32px);
 }
 
 .col-5 {
-
+    text-align: center;
+    width: 100%;
+    padding: 0 1rem;
+    overflow: hidden;
+    display: block;
     max-width: calc((100%/12*5) - 32px);
 }
 
 .col-6 {
-
+    text-align: center;
+    width: 100%;
+    padding: 0 1rem;
+    overflow: hidden;
+    display: block;
     max-width: calc((100%/12*6) - 32px);
 }
 
 .col-7 {
-
+    text-align: center;
+    width: 100%;
+    padding: 0 1rem;
+    overflow: hidden;
+    display: block;
     max-width: calc((100%/12*7) - 32px);
 }
 
 .col-8 {
-
+    text-align: center;
+    width: 100%;
+    padding: 0 1rem;
+    overflow: hidden;
+    display: block;
     max-width: calc((100%/12*8) - 32px);
 }
 
 .col-9 {
-
+    text-align: center;
+    width: 100%;
+    padding: 0 1rem;
+    overflow: hidden;
+    display: block;
     max-width: calc((100%/12*9) - 32px);
 }
 
 .col-10 {
-
+    text-align: center;
+    width: 100%;
+    padding: 0 1rem;
+    overflow: hidden;
+    display: block;
     max-width: calc((100%/12*10) - 32px);
 }
 
 .col-11 {
-
+    text-align: center;
+    width: 100%;
+    padding: 0 1rem;
+    overflow: hidden;
+    display: block;
     max-width: calc((100%/12*11) - 32px);
 }
 
 .col-12 {
-
+    text-align: center;
+    width: 100%;
+    padding: 0 1rem;
+    overflow: hidden;
+    display: block;
     max-width: calc((100%/12) - 32px);
 }
 
@@ -141,8 +185,82 @@
     }
 }
 
+@media screen and (min-width: 992px) {
+    .col {
+        text-align: left;
+    }
+    .mobilnav {
+        display: none;
+    }
+    .navmain {
+        display: block;
+    }
+    .row {
+        max-width: 90%;
+    }
+    .large-col {
+        padding: 0 1rem;
+    }
+    
+    .large-col-2 {
+    
+        max-width: calc((100%/12*2) - 32px);
+    }
+    
+    .large-col-3 {
+    
+        max-width: calc((100%/12*3) - 32px);
+    }
+    
+    .large-col-4 {
+    
+        max-width: calc((100%/12*4) - 32px);
+    }
+    
+    .large-col-5 {
+    
+        max-width: calc((100%/12*5) - 32px);
+    }
+    
+    .large-col-6 {
+    
+        max-width: calc((100%/12*6) - 32px);
+    }
+    
+    .large-col-7 {
+    
+        max-width: calc((100%/12*7) - 32px);
+    }
+    
+    .large-col-8 {
+    
+        max-width: calc((100%/12*8) - 32px);
+    }
+    
+    .large-col-9 {
+    
+        max-width: calc((100%/12*9) - 32px);
+    }
+    
+    .large-col-10 {
+    
+        max-width: calc((100%/12*10) - 32px);
+    }
+    
+    .large-col-11 {
+    
+        max-width: calc((100%/12*11) - 32px);
+    }
 
-@media screen and (min-width: 1364px) {
+    .large-col-12 {
+    
+        max-width: calc((100%/12*11) - 32px);
+    }
+}
+
+
+
+@media screen and (min-width: 1200px) {
 
     .giant-col {
         padding: 0 1rem;
