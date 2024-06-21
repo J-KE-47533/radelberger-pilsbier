@@ -16,11 +16,17 @@
     src: url(../fonts/Quicksand-Bold.ttf);
 }
 
+html {
+    scroll-behavior: smooth;
+}
+
 body {
     margin: 0;
     background-color: var(--bg-color);
     color: var(--main-color);
     font-family: 'quicksand';
+
+
 }
 
 
