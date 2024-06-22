@@ -68,6 +68,10 @@ h1:before {
     stroke-width: 20px;
 }
 
+h2 {
+    font-size: 36px;
+}
+
 
 header {
     position: relative;
