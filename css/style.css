@@ -168,16 +168,17 @@ section {
     margin-right: 1rem;
 }
 
+
 .mobilnav ul {
     display: block;
     background-color: var(--bg-color-light);
     height: 100vh;
     position: absolute;
-    width: 100%;
-    right: -100%;
+    max-width: 70%;
+    width: 70%;
+    right: -70%;
     top:0;
     transition: ease-in-out 0.5s;
-
 
     margin-block-start: unset;
     margin-block-end: unset;
@@ -188,10 +189,16 @@ section {
 
 }
 
+.mobilnav ul li {
+    padding: 2rem;
+}
+
 #navbtnclose {
     position: absolute;
-    right: 0;
-    top: 10.4px;
+    left: 0;
+    width: 30%;
+    top: 0;
+    height: 100vh;
 }
 
 img {

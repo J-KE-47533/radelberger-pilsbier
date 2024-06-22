@@ -18,5 +18,9 @@
         width: 2rem;
         background-color: var(--main-color);
     }
+
+    .pfeile {
+        display: flex !important;
+    }
     
 }
