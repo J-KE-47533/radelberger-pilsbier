@@ -38,29 +38,17 @@ setInterval(autoumschalten, 3000);
 
 document.addEventListener('DOMContentLoaded', () => {
     const slider = document.getElementById('slider');
-    let currentIndex = 0;
 
-    let startX;
-    let endX;
-
-    function showSlide(index) {
-        slide.forEach((slide, i) => {
-            slide.classList.toggle('active', i === index);
-        });
-    }
-
-    slider.addEventListener('touchstart', (e) => {
-        startX = e.touches[0].clientX;
+    slider.addEventListener('touchstart', (event) => {
+        startX = event.touches[0].clientX;
     });
 
-    slider.addEventListener('touchend', (e) => {
-        endX = e.changedTouches[0].clientX;
+    slider.addEventListener('touchend', (event) => {
+        endX = event.changedTouches[0].clientX;
 
-        if (startX > endX + 50) {
-            // Swipe left
+        if (startX > endX + 30) {
             umschalten(1);
-        } else if (startX < endX - 50) {
-            // Swipe right
+        } else if (startX < endX - 30) {
             umschalten(-1);
         }
     });
