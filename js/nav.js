@@ -35,21 +35,35 @@ document.addEventListener('DOMContentLoaded', () => {
     })
 })
 
+var header = document.getElementById('header');
+const headerheight = header.offsetHeight;
+
+
 window.addEventListener('touchstart', (navopen) => {
     start1x = navopen.touches[0].clientX;
+    start1y = navopen.touches[0].clientY;
 })
 
 window.addEventListener('touchend', (navopen) => {
-    end1x = navopen.changedTouches[0].clientX;
-    if (start1x > end1x + 10) {
-        navlist.style.right = "0";
+    const end1x = navopen.changedTouches[0].clientX;
+    const end1y = navopen.changedTouches[0].clientY;
+
+    // Überprüfe, ob das Touch-Event außerhalb des Headers gestartet hat
+    if (start1y > headerheight) {
+        if (start1x > end1x + 100) {
+            navlist.style.right = "0";
+        }
+
+        if (end1x > start1x + 100) {
+            navlist.style.right = "-100%";
+        }
     }
-    
-})
+});
 
+var navitemmobil = document.querySelectorAll('.navitem');
 
-
-// document.addEventListener('DOMContentLoaded', () => {
-
-
-// })
+for (var i = 0; i < navitemmobil.length; i++) {
+    navitemmobil[i].onclick = function () {
+        navlist.style.right = "-100%";
+    }
+}

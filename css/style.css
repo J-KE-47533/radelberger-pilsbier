@@ -200,11 +200,15 @@ section {
     unicode-bidi: unset;
 
     backdrop-filter: blur(1px);
+    margin-top: 2rem;
 
 }
 
 .mobilnav ul li {
     padding: 2rem;
+    width: 100%;
+    color: var(--main-color);
+    border-bottom:  1px solid var(--main-color);
 }
 
 #navbtnclose {
