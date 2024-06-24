@@ -29,7 +29,9 @@ body {
 
 }
 
-
+header {
+    user-select: none !important;
+}
 
 a {
     text-decoration: none;

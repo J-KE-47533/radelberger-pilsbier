@@ -35,30 +35,30 @@ document.addEventListener('DOMContentLoaded', () => {
     })
 })
 
-var header = document.getElementById('header');
-const headerheight = header.offsetHeight;
+// var header = document.getElementById('header');
+// const headerheight = header.height;
 
 
-window.addEventListener('touchstart', (navopen) => {
-    start1x = navopen.touches[0].clientX;
-    start1y = navopen.touches[0].clientY;
-})
+// window.addEventListener('touchstart', (navopen) => {
+//     start1x = navopen.touches[0].clientX;
+//     start1y = navopen.touches[0].clientY;
+// })
 
-window.addEventListener('touchend', (navopen) => {
-    const end1x = navopen.changedTouches[0].clientX;
-    const end1y = navopen.changedTouches[0].clientY;
+// window.addEventListener('touchend', (navopen) => {
+//     const end1x = navopen.changedTouches[0].clientX;
+//     const end1y = navopen.changedTouches[0].clientY;
 
-    // Überprüfe, ob das Touch-Event außerhalb des Headers gestartet hat
-    if (start1y > headerheight) {
-        if (start1x > end1x + 100) {
-            navlist.style.right = "0";
-        }
+//     // Überprüfe, ob das Touch-Event außerhalb des Headers gestartet hat
+//     if (start1y > headerheight) {
+//         if (start1x > end1x + 100) {
+//             navlist.style.right = "0";
+//         }
 
-        if (end1x > start1x + 100) {
-            navlist.style.right = "-100%";
-        }
-    }
-});
+//         if (end1x > start1x + 100) {
+//             navlist.style.right = "-100%";
+//         }
+//     }
+// });
 
 var navitemmobil = document.querySelectorAll('.navitem');
 
