@@ -1,19 +1,95 @@
 :root:root {
-    --bg-color: rgb(255, 253, 244);
-    --bg-color-light: rgba(183, 177, 150, 0.6);
-    --bg-color-shaddow: rgb(183, 177, 150);
-    --main-color: rgb(82, 68, 0);
-    --second-color: rgb(255, 253, 244);
+    --bg-color: #fffdf4;
+    --bg-color-light: #6BAA75;
+    --bg-color-lighten: #9ecca6;
+    --bg-color-shaddow: #b7b196;
+    --main-color: #4E3B31;
+    --text-color: #8C8C8C;
+    --second-color: #fffdf4;
+    --accent-color: #D41D0B;
+    --base-padding: 0.6rem 1.4rem
 }
 
+/* baloo-bhai-2-regular - latin */
+/* baloo-bhai-2-regular - latin */
 @font-face {
-    font-family: quicksand;
-    src: url(../fonts/Quicksand-Regular.ttf);
+    font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+    font-family: 'Baloo Bhai 2';
+    font-style: normal;
+    font-weight: 400;
+    src: url('../fonts/baloo-bhai-2-v28-latin-regular.eot'); /* IE9 Compat Modes */
+    src: url('../fonts/baloo-bhai-2-v28-latin-regular.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+         url('../fonts/baloo-bhai-2-v28-latin-regular.woff2') format('woff2'), /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+         url('../fonts/baloo-bhai-2-v28-latin-regular.woff') format('woff'), /* Chrome 5+, Firefox 3.6+, IE 9+, Safari 5.1+, iOS 5+ */
+         url('../fonts/baloo-bhai-2-v28-latin-regular.ttf') format('truetype'), /* Chrome 4+, Firefox 3.5+, IE 9+, Safari 3.1+, iOS 4.2+, Android Browser 2.2+ */
+         url('../fonts/baloo-bhai-2-v28-latin-regular.svg#BalooBhai2') format('svg'); /* Legacy iOS */
+  }
+  /* baloo-bhai-2-500 - latin */
+  @font-face {
+    font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+    font-family: 'Baloo Bhai 2';
+    font-style: normal;
+    font-weight: 500;
+    src: url('../fonts/baloo-bhai-2-v28-latin-500.eot'); /* IE9 Compat Modes */
+    src: url('../fonts/baloo-bhai-2-v28-latin-500.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+         url('../fonts/baloo-bhai-2-v28-latin-500.woff2') format('woff2'), /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+         url('../fonts/baloo-bhai-2-v28-latin-500.woff') format('woff'), /* Chrome 5+, Firefox 3.6+, IE 9+, Safari 5.1+, iOS 5+ */
+         url('../fonts/baloo-bhai-2-v28-latin-500.ttf') format('truetype'), /* Chrome 4+, Firefox 3.5+, IE 9+, Safari 3.1+, iOS 4.2+, Android Browser 2.2+ */
+         url('../fonts/baloo-bhai-2-v28-latin-500.svg#BalooBhai2') format('svg'); /* Legacy iOS */
+  }
+  /* baloo-bhai-2-700 - latin */
+  @font-face {
+    font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+    font-family: 'Baloo Bhai 2';
+    font-style: normal;
+    font-weight: 700;
+    src: url('../fonts/baloo-bhai-2-v28-latin-700.eot'); /* IE9 Compat Modes */
+    src: url('../fonts/baloo-bhai-2-v28-latin-700.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+         url('../fonts/baloo-bhai-2-v28-latin-700.woff2') format('woff2'), /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+         url('../fonts/baloo-bhai-2-v28-latin-700.woff') format('woff'), /* Chrome 5+, Firefox 3.6+, IE 9+, Safari 5.1+, iOS 5+ */
+         url('../fonts/baloo-bhai-2-v28-latin-700.ttf') format('truetype'), /* Chrome 4+, Firefox 3.5+, IE 9+, Safari 3.1+, iOS 4.2+, Android Browser 2.2+ */
+         url('../fonts/baloo-bhai-2-v28-latin-700.svg#BalooBhai2') format('svg'); /* Legacy iOS */
+  }
+
+  ::-webkit-scrollbar {
+    width: 8px; /* Breite der Scrollleiste */
+    height: 8px; /* Höhe der Scrollleiste (horizontal) */
+
 }
 
-@font-face {
-    font-family: quicksand-bold;
-    src: url(../fonts/Quicksand-Bold.ttf);
+/* Hintergrund der Scrollleiste */
+::-webkit-scrollbar-track {
+    background: #f0f0f0; /* Farbe des Tracks */
+    border-radius: 20px; /* Abgerundete Ecken */
+    height: 25%;
+}
+
+/* Daumen der Scrollleiste */
+::-webkit-scrollbar-thumb:hover {
+    background: var(--bg-color-lighten); /* Farbe des Daumens */
+    border-radius: 6px;
+    transition: background-color 0.5s ease;
+
+
+}
+
+/* Daumen beim Hover */
+::-webkit-scrollbar-thumb {
+    background: var(--bg-color-light); /* Farbe beim Hover */
+    border-radius: 20px;
+    width: 8px; /* Breite der Scrollleiste */
+    height: 8px; /* Höhe der Scrollleiste (horizontal) */
+}
+
+::selection {
+    background: var(--bg-color-lighten); /* Hintergrundfarbe der Markierung */
+    color: var(--bg-color);        /* Textfarbe während der Markierung */
+}
+
+select {
+    appearance: none; /* Entfernt das Standard-Aussehen */
+    -webkit-appearance: none; /* Für WebKit-basierte Browser wie Safari */
+    -moz-appearance: none; /* Für Firefox */
 }
 
 html {
@@ -24,18 +100,61 @@ body {
     margin: 0;
     background-color: var(--bg-color);
     color: var(--main-color);
-    font-family: 'quicksand';
+    font-family: 'Baloo Bhai 2';
 
+}
 
+button {
+    all: unset;
+    margin: 0 0.5rem 0 0.3rem;
 }
 
 header {
     user-select: none !important;
+    position: relative;
+    z-index: 0;
 }
+
+header:before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background: linear-gradient(rgba(0,0,0,0) 60%, rgba(0,0,0,0.6) 100%);
+    z-index: 11;
+}
+
+
+
+.btn-header:before {
+    position: absolute;
+    content: '';
+    height: 5rem;
+    width: 3px;
+    background-color: var(--bg-color);
+    margin: auto;
+    left: 0;
+    right: 0;
+    bottom: 4rem;
+    transition: height 0.3s;
+    transform: rotate(180deg);
+
+}
+
+.btn-header:hover:before {
+    height: 0;
+}
+
+.btn-header:hover {
+    opacity: 0.7;
+}
+
 
 a {
     text-decoration: none;
-    color: var(--main-color);
+    color: var(--bg-color);
     transition: 0.15s;
 }
 
@@ -48,133 +167,119 @@ p {
     margin-bottom: 1.2rem;
 }
 
-h1 {
-    font-size: 42px;
-    font-weight: bold;
-    line-height: 38pt;
-    margin: 0;
-}
-
-h1 span {
-    display: block;
-    font-weight: 400;
-    font-size: 32px;
-    position: relative;
-
-}
-
-h1:before {
-    -webkit-text-stroke-width: 20px;
-    -webkit-text-stroke-color: black;
-
-    stroke-width: 20px;
-}
-
 h2 {
     font-size: 42px;
+    display: inherit;
 }
 
-
 header {
-    position: relative;
     width: 100%;
     height: 95vh;
     overflow: hidden;
     background-color: #333;
     color: white;
     text-align: center;
-    /* box-shadow: 0 15px 15px var(--bg-color-shaddow); */
+    background-image: url(../images/header.jpg);
+    background-repeat: no-repeat;
+    background-position: center 10%;
+    background-size: cover;
 }
 
-header::after {
-    content: '';
-    position: absolute;
-    bottom: 0;
-    width: 100%;
-    height: 3vh;
-    background: linear-gradient(to top , var(--bg-color), rgba(255, 0, 0, 0));
-    left: 0;
-}
 .navmain {
     position: fixed;
-    z-index: 999 !important;
+    z-index: 999999999999 !important;
     padding: 2rem 0;
     width: 100%;
     top: 0;
     left: 0;
     background-color: var(--bg-color-light);
     transition: 0.2s;
+    max-height: 170px;
 }
 
 .navmain {
     display: none;
 }
 
+.logo {
+    width: 100%;
+    object-fit: contain;
+    transition: 0.3s;
+}
+
 ul {
     list-style: none;
     display: flex;
-    justify-content: center;
+    justify-content: flex-end;
+    align-items: center;
     gap: 0 3rem;
     font-size: 20px;
     color: var(--second-color);
 }
 
-section {
-    padding: 10rem 0;
-    position: relative;
+.navmain ul li a {
+    color: var(--bg-color) !important;
 }
 
-.section1:before {
-    content: '';
-    background-image: url(../images/bgimg.jpg);
-    background-position: fixed;
-    content: ' ';
-    display: block;
-    position: absolute;
-    left: 0;
-    top: 0;
-    width: 100%;
-    height: 100%;
-    opacity: 0.2;
-    z-index: -1;
-    background-size: cover;
+.newSection {
+    padding-top: 5rem !important;
 }
 
 .row {
     display: flex;
-    margin: auto !important;
+    margin-left: auto !important;
+    margin-right: auto !important;
     width: 100%;
     max-width: 1620px;
     flex-wrap: wrap;
     gap: 2rem 0;
+    justify-content: flex-start;
 }
 
 .row.space-between {
     justify-content: space-between;
 }
 
+.row.center {
+    justify-content: center;
+}
+
+
 .mobilnav {
     position: fixed;
     top: 0;
     left: 0;
     width: 100%;
-    height: 3rem;
-    background-color: var(--bg-color);
+    height: 4rem;
+    background-color: var(--bg-color-light);
     display: flex;
-    justify-content: end;
+    justify-content: space-between;
     align-items: center;
+    z-index: 99999999;
 }
 
 .mobilnav img {
-    height: 1.7rem;
-    margin-right: 1rem;
+    height: 2.5rem;
     color: white !important;
     position: relative;
     z-index: 1;
 }
 
+img.navbtn {
+    margin-right: 1rem;
+    height: 2rem;
+    transition: 0.3s;
+}
+
+.navbtn:hover {
+    opacity: 0.7;
+}
+
+.logomobil {
+    margin-left: 1rem;
+}
+
 .mobilnav .mobilnavopen {
-    background-color: var(--bg-color-light);
     height: 100vh;
     position: absolute;
     max-width: 100%;
@@ -184,8 +289,10 @@ section {
     transition: ease-in-out 0.5s;
     display: flex;
     z-index: 99;
+}
 
-
+.navlist {
+    background-color: var(--bg-color-light);
 }
 
 .mobilnav ul {
@@ -193,24 +300,19 @@ section {
     height: 100vh;
     max-width: 70%;
     width: 70%;
-
     margin-block-start: unset;
     margin-block-end: unset;
     margin-inline-start: unset;
     margin-inline-end: unset;
     padding-inline-start: unset;
     unicode-bidi: unset;
-
     backdrop-filter: blur(1px);
-    margin-top: 2rem;
-
 }
 
 .mobilnav ul li {
     padding: 2rem;
     width: 100%;
-    color: var(--main-color);
-    border-bottom:  1px solid var(--main-color);
+    border-bottom:  1px solid var(--bg-color);
 }
 
 #navbtnclose {
@@ -261,6 +363,10 @@ img {
     margin: auto;
 }
 
+.vertical-align {
+    align-items: center;
+}
+
 .gallery img{
     max-height: 15rem;
     border-radius: 10px;
@@ -273,3 +379,4 @@ img {
 .gallery .row {
     max-width: 100% !important;
 }
+

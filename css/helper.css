@@ -40,3 +40,91 @@ iframe {
     border-image: unset;
     border-radius: 10px;
 }
+
+
+
+
+.collapser-container {
+    margin-top: 20px;
+}
+
+.collapser-btn {
+  position: relative;
+  display: block;
+  margin: auto;
+  width: 67.5%;
+  padding: 1.5rem 1.8rem;
+  background-color: var(--bg-color-light);
+  color: white;
+  font-size: 16px;
+  border: none;
+  cursor: pointer;
+  text-align: left;
+  border-radius: 20px;
+  font-size: 16px;
+  line-height: 0.8em;
+  transition: 0.3s;
+}
+
+.collapser-btn:hover {
+  background-color: var(--bg-color-lighten);
+}
+
+.collapser-btn::after {
+  content: '';
+  background-image: url(../images/vector2.svg);
+  position: absolute;
+  right: 1rem;
+  transition: transform 0.3s ease;
+  width: 1.5rem;
+  height: 1rem;
+  background-size: contain;
+  background-repeat: no-repeat;
+  transform: rotate(-90deg);
+}
+
+.collapser-content {
+    opacity: 0; /* Start mit Transparenz */
+    max-height: 0; /* Start mit maximaler Höhe von 0 */
+    /* overflow: hidden; Verhindert, dass der Inhalt sichtbar wird */
+    transition: 0.3s ease; /* Übergang für max-height und opacity */
+    margin-top: 10px; /* optional, um Platz zu schaffen */
+  }
+  
+  .collapser-content.open {
+    max-height: 1500px; /* Maximale Höhe, die den gesamten Inhalt abdeckt */
+    opacity: 1; /* Inhalt wird sichtbar */
+  }
+
+.collapser-btn.open::after {
+  transform: rotate(0deg); /* Dreht den Pfeil um 180 Grad */
+}
+
+
+@media screen and (min-width: 760px) {
+
+
+  .collapser-btn {
+    font-size: 18px;
+    width: unset;
+  }
+
+  .collapser-btn::after {
+    right: 1.8rem;
+    width: 1.8rem;
+  }
+}
+
+@media screen and (min-width: 992px) {
+
+
+}
+
+
+@media screen and (min-width: 992px) {
+
+  .collapser-btn {
+    font-size: 20px;
+  }
+
+}

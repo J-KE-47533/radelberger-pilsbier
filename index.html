@@ -4,142 +4,1494 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Radelberger in der ganzen Welt</title>
+    <title>Konfigurieren Sie Ihr Lieblinkgsmüsli | MyMixx</title>
     <link rel="stylesheet" href="css/style.css">
-    <link rel="stylesheet" href="css/style.medium.css">
+    <link rel="stylesheet" href="css/style.breakpoints.css">
     <link rel="stylesheet" href="css/breakpoints.css">
     <link rel="stylesheet" href="css/lightbox.css">
-    <link rel="stylesheet" href="css/slide.css">
     <link rel="stylesheet" href="css/helper.css">
+    <link rel="stylesheet" href="css/form.css">
+    <link rel="stylesheet" href="css/form-error.css">
+    <link rel="stylesheet" href="css/merkzettel.css">
 </head>
 
 <body>
+    <div class="navmain" id="navmain">
+        <div class="row vertical-align">
+            <div class="col-2">
+                <a href="../index.html"><img class="logo" id="logo" src="./images/logo.png"
+                        alt="Logo MyMixx"></a>
+            </div>
+            <div class="col-10">
+                <ul>
+                    <li><a href="#firstSection">Home</a></li>
+                    <li><a href="#firstSection">Kontakt</a></li>
+                    <li><a href="#firstSection">Anfahrt</a></li>
+                </ul>
+    
+            </div>
+        </div>
+    </div>
+
     <header id="header">
-        <div class="navmain" id="navmain">
-            <ul>
-                <li><a href="#section1">Vorstellung</a></li>
-                <li><a href="#section2">Reiseziel</a></li>
-                <li><a href="#">Impressionen</a></li>
-            </ul>
-        </div>
-        <div class="slider" id="slider">
-            <div class="slide">
-                <img src="./images/header1.jpg" alt="Slide 1">
-            </div>
-            <div class="slide">
-                <img src="./images/header3.jpg" alt="Slide 2">
-            </div>
-            <div class="slide">
-                <img src="./images/header.jpg" alt="Slide 1">
-            </div>
-
-            <div class="slide">
-                <img src="./images/header2.jpg" alt="Slide 2">
-            </div>
-            <script src="./js/sliderjanis.js"></script>
-            <!-- <script src="./js/slide.js"></script>
-            <script src="./js/slide-mobil.js"></script> -->
-            <div class="pfeile">
-                <img onclick="umschalten(-1)" src="./images/icons/pfeil.svg" alt="" class="pfeil links">
-                <img onclick="umschalten(1)" src="./images/icons/pfeil.svg" alt="" class="pfeil rechts">
-            </div>
-        </div>
+        <a class="btn-header" href="#firstSection">Zum Bestellformular</a>
     </header>
-    <section class="section section1" id="section1">
-        <div class="row space-between">
-            <div class="col">
-                <h1>Warum uns Reisen spaß macht <span>Erstmal zum Allgemeinen</span></h1>
-            </div>
-            <div class="col medium-col-6 giant-col-7 ">
 
-                <p>
-                    <strong>Fahrradreisen</strong> machen aus mehreren Gründen großen Spaß und sind eine wunderbare Möglichkeit, die Welt
-                    zu erkunden. Zunächst einmal bieten sie ein unvergleichliches <strong>Naturerlebnis</strong>. Während man durch
-                    Wälder, über Felder und entlang von Flüssen radelt, spürt man den Wind im Gesicht, hört das
-                    Zwitschern der Vögel und riecht die verschiedenen Düfte der Natur. Diese intensive
-                    Naturverbundenheit lässt den Alltag schnell vergessen und fördert die <strong>Entspannung</strong>.
-                </p>
-                <p>                    
-                    Gleichzeitig ist Fahrradfahren eine hervorragende <strong>sportliche Betätigung</strong>. Es stärkt die Muskulatur,
-                    verbessert die Ausdauer und sorgt für ein rundum gutes Körpergefühl. Die körperliche Anstrengung
-                    wird oft durch die beeindruckenden Ausblicke und die Schönheit der Umgebung belohnt, was zusätzlich
-                    motiviert. Man spürt die eigene Kraft und Energie, während man Kilometer um Kilometer zurücklegt und
-                    sich neue Ziele setzt.
-                </p>
-                <p>                    
-                    Ein weiterer großer Vorteil von Fahrradreisen ist die intensive <strong>Wahrnehmung der Umgebung</strong>. Im
-                    Gegensatz zu Autofahrten, bei denen man oft an den schönsten Orten vorbeirauscht, bietet das Fahrrad
-                    die Möglichkeit, spontan anzuhalten und Details zu entdecken. Sei es ein malerisches Dorf, ein
-                    versteckter See oder ein interessantes Kulturdenkmal – auf dem Fahrrad erlebt man die Umgebung viel
-                    bewusster und unmittelbarer. Man hat die Freiheit, die Route flexibel zu gestalten und auf
-                    <strong>Entdeckungsreise</strong> zu gehen.
-                </p>
-                <p>                    
-                    Nicht zuletzt fördert das Radreisen auch die <strong>Begegnung mit anderen Menschen</strong>. Ob man Gleichgesinnte
-                    auf dem Radweg trifft oder in einem kleinen Café mit Einheimischen ins Gespräch kommt – die sozialen
-                    Kontakte bereichern jede Tour. All diese Aspekte machen Fahrradreisen zu einer besonders
-                    abwechslungsreichen und erfüllenden Freizeitaktivität, die Körper und Geist gleichermaßen gut tut.
-                </p>
+    <section class="section firstSection" id="firstSection">
+        <div class="row center margin-top">
+            <div class="col large-col-11 giant-col-9 form-over-container">
+                <h1>Konfigurator<span>Gestalte dein persönliches Lieblingsmüsli</span></h1>
+                <form id="formular">
+                    <div class="h2-section">
+                        <h2 id="h2-1" class="h2-active"></h2>
+                        <h2 id="h2-2"></h2>
+                        <h2 id="h2-3"></h2>
+                        <h2 id="h2-4"></h2>
+                        <h2 id="h2-5"></h2>
+                        <h2 id="h2-6"></h2>
+                        <h2 id="h2-7"></h2>
+                    </div>
+
+                    <div class="row form-container center active" id="section-1">
+                        <div class="col medium-col-11 large-col-10 form-section">
+
+                            <div class="collapser-container">
+                                <div class="collapser-btn">Haferprodukte</div>
+                                <div class="collapser-content">
+                                    <fieldset class="zarte-haferflocken">
+                                        <label for="zarte-haferflocken">Zarte Haferflocken</label>
+                                        <div class="price-section-container">
+                                            <div class="price-section">
+                                            </div>
+                                            <select id="zarte-haferflocken-select" name="zarte-haferflocken" value="0">
+                                                <option value="75">75 g</option>
+                                                <option value="150">150 g</option>
+                                                <option value="200">200 g</option>
+                                                <option value="250" selected>250 g</option>
+                                                <option value="300">300 g</option>
+                                                <option value="400">400 g</option>
+                                                <option value="500">500 g</option>
+                                            </select>
+                                            <input type="checkbox" name="zarte-haferflocken" id="zarte-haferflocken">
+                                        </div>
+
+                                    </fieldset>
+                                    <fieldset class="großblättrige-haferflocken">
+                                        <label for="großblättrige-haferflocken">Großblättrige Haferflocken</label>
+                                        <div class="price-section-container">
+                                            <div class="price-section"></div>
+                                            <select id="großblättrige-haferflocken-select" name="großblättrige-haferflocken">
+                                                <option value="75">75 g</option>
+                                                <option value="150">150 g</option>
+                                                <option value="200">200 g</option>
+                                                <option value="250" selected>250 g</option>
+                                                <option value="300">300 g</option>
+                                                <option value="400">400 g</option>
+                                                <option value="500">500 g</option>
+                                            </select>
+                                            <input type="checkbox" name="großblättrige-haferflocken" id="großblättrige-haferflocken">
+                                        </div>
+                                    </fieldset>
+                                    <fieldset class="haferschrot">
+                                        <label for="haferschrot">Haferschrot</label>
+                                        <div class="price-section-container">
+                                            <div class="price-section"></div>
+                                            <select id="haferschrot-select" name="haferschrot">
+                                                <option value="75">75 g</option>
+                                                <option value="150">150 g</option>
+                                                <option value="200">200 g</option>
+                                                <option value="250" selected>250 g</option>
+                                                <option value="300">300 g</option>
+                                                <option value="400">400 g</option>
+                                                <option value="500">500 g</option>
+                                            </select>
+                                            <input type="checkbox" name="haferschrot" id="haferschrot">
+                                        </div>
+                                    </fieldset>
+                                    <fieldset class="geroestete-haferflakes">
+                                        <label for="geroestete-haferflakes">Geröstete Haferflakes</label>
+                                        <div class="price-section-container">
+                                            <div class="price-section"></div>
+                                            <select id="geroestete-haferflakes-select" name="geroestete-haferflakes">
+                                                <option value="75">75 g</option>
+                                                <option value="150">150 g</option>
+                                                <option value="200">200 g</option>
+                                                <option value="250" selected>250 g</option>
+                                                <option value="300">300 g</option>
+                                                <option value="400">400 g</option>
+                                                <option value="500">500 g</option>
+                                            </select>
+                                            <input type="checkbox" name="geroestete-haferflakes" id="geroestete-haferflakes">
+                                        </div>
+                                    </fieldset>
+
+                                </div>
                             </div>
-            <div class="image-container center col col-10 medium-col-6 giant-col-4 suffix-1">
-                <img class="lightbox" src="./images/moritz-auf-dem-rad.jpg" alt="">
-            </div>
 
-            <div id="lightbox-div" class="lightbox-container">
-                <span class="close">&times;</span>
-                <img class="img-lightbox" id="img01">
-            </div>
+                            <div class="collapser-container">
+                                <div class="collapser-btn" >Dinkelprodukte</div>
+                                <div class="collapser-content">
+                                    <fieldset class="dinkelmuesli">
+                                        <label for="dinkelmuesli">Dinkelmüsli</label>
+                                        <div class="price-section-container">
+                                            <div class="price-section">
+                                            </div>
+                                            <select id="dinkelmuesli-select" name="dinkelmuesli" value="0">
+                                                <option value="75">75 g</option>
+                                                <option value="150">150 g</option>
+                                                <option value="200">200 g</option>
+                                                <option value="250" selected>250 g</option>
+                                                <option value="300">300 g</option>
+                                                <option value="400">400 g</option>
+                                                <option value="500">500 g</option>
+                                            </select>
+                                            <input type="checkbox" name="dinkelmuesli" id="dinkelmuesli">
+                                        </div>
+                                    </fieldset>    
+                                </div>
+                            </div>
 
+                            <div class="collapser-container">
+                                <div class="collapser-btn" >Pseudogetreide</div>
+                                <div class="collapser-content">
+                                    <fieldset class="quinoaflocken">
+                                        <label for="quinoaflocken">Quinoaflocken</label>
+                                        <div class="price-section-container">
+                                            <div class="price-section"></div>
+                                            <select id="quinoaflocken-select" name="quinoaflocken">
+                                                <option value="75">75 g</option>
+                                                <option value="150">150 g</option>
+                                                <option value="200">200 g</option>
+                                                <option value="250" selected>250 g</option>
+                                                <option value="300">300 g</option>
+                                                <option value="400">400 g</option>
+                                                <option value="500">500 g</option>
+                                            </select>
+                                            <input type="checkbox" name="quinoaflocken" id="quinoaflocken">
+                                        </div>
+                                    </fieldset>   
+
+                                    <fieldset class="buchweizenflocken">
+                                        <label for="buchweizenflocken">Buchweizenflocken</label>
+                                        <div class="price-section-container">
+                                            <div class="price-section"></div>
+                                            <select id="buchweizenflocken-select" name="buchweizenflocken">
+                                                <option value="75">75 g</option>
+                                                <option value="150">150 g</option>
+                                                <option value="200">200 g</option>
+                                                <option value="250" selected>250 g</option>
+                                                <option value="300">300 g</option>
+                                                <option value="400">400 g</option>
+                                                <option value="500">500 g</option>
+                                            </select>
+                                            <input type="checkbox" name="buchweizenflocken" id="buchweizenflocken">
+                                        </div>
+                                    </fieldset>    
+
+                                    <fieldset class="amaranth-pops">
+                                        <label for="amaranth-pops">Amaranth-Pops</label>
+                                        <div class="price-section-container">
+                                            <div class="price-section"></div>
+                                            <select id="amaranth-pops-select" name="amaranth-pops">
+                                                <option value="75">75 g</option>
+                                                <option value="150">150 g</option>
+                                                <option value="200">200 g</option>
+                                                <option value="250" selected>250 g</option>
+                                                <option value="300">300 g</option>
+                                                <option value="400">400 g</option>
+                                                <option value="500">500 g</option>
+                                            </select>
+                                            <input type="checkbox" name="amaranth-pops" id="amaranth-pops">
+                                        </div>
+                                    </fieldset>    
+                                </div>
+                            </div>
+
+                            <div class="collapser-container">
+                                <div class="collapser-btn" >Reis- und Maisprodukte</div>
+                                <div class="collapser-content">
+                                    <fieldset class="vollkorn-reisflocken">
+                                        <label for="vollkorn-reisflocken">Vollkorn-Reisflocken</label>
+                                        <div class="price-section-container">
+                                            <div class="price-section"></div>
+                                            <select id="vollkorn-reisflocken-select" name="vollkorn-reisflocken">
+                                                <option value="75">75 g</option>
+                                                <option value="150">150 g</option>
+                                                <option value="200">200 g</option>
+                                                <option value="250" selected>250 g</option>
+                                                <option value="300">300 g</option>
+                                                <option value="400">400 g</option>
+                                                <option value="500">500 g</option>
+                                            </select>
+                                            <input type="checkbox" name="vollkorn-reisflocken" id="vollkorn-reisflocken">
+                                        </div>
+                                    </fieldset>     
+                                    <fieldset class="rice-krispies">
+                                        <label for="rice-krispies">Rice Krispies</label>
+                                        <div class="price-section-container">
+                                            <div class="price-section"></div>
+                                            <select id="rice-krispies-select" name="rice-krispies">
+                                                <option value="75">75 g</option>
+                                                <option value="150">150 g</option>
+                                                <option value="200">200 g</option>
+                                                <option value="250" selected>250 g</option>
+                                                <option value="300">300 g</option>
+                                                <option value="400">400 g</option>
+                                                <option value="500">500 g</option>
+                                            </select>
+                                            <input type="checkbox" name="rice-krispies" id="rice-krispies">
+                                        </div>
+                                    </fieldset>     
+                                    <fieldset class="maisgrieß">
+                                        <label for="maisgrieß">Maisgrieß (Polenta)</label>
+                                        <div class="price-section-container">
+                                            <div class="price-section"></div>
+                                            <select id="maisgrieß-select" name="maisgrieß">
+                                                <option value="75">75 g</option>
+                                                <option value="150">150 g</option>
+                                                <option value="200">200 g</option>
+                                                <option value="250" selected>250 g</option>
+                                                <option value="300">300 g</option>
+                                                <option value="400">400 g</option>
+                                                <option value="500">500 g</option>
+                                            </select>
+                                            <input type="checkbox" name="maisgrieß" id="maisgrieß">
+                                        </div>
+                                    </fieldset>     
+                                </div>
+                            </div>
+
+                            <div class="collapser-container">
+                                <div class="collapser-btn" >Weitere Getreideflocken</div>
+                                <div class="collapser-content">
+                                    <fieldset class="hirseflocken">
+                                        <label for="hirseflocken">Hirseflocken</label>
+                                        <div class="price-section-container">
+                                            <div class="price-section"></div>
+                                            <select id="hirseflocken-select" name="hirseflocken">
+                                                <option value="75">75 g</option>
+                                                <option value="150">150 g</option>
+                                                <option value="200">200 g</option>
+                                                <option value="250" selected>250 g</option>
+                                                <option value="300">300 g</option>
+                                                <option value="400">400 g</option>
+                                                <option value="500">500 g</option>
+                                            </select>
+                                            <input type="checkbox" name="hirseflocken" id="hirseflocken">
+                                        </div>
+                                    </fieldset>     
+                                    <fieldset class="gerstenflocken">
+                                        <label for="gerstenflocken">Gerstenflocken</label>
+                                        <div class="price-section-container">
+                                            <div class="price-section"></div>
+                                            <select id="gerstenflocken-select" name="gerstenflocken">
+                                                <option value="75">75 g</option>
+                                                <option value="150">150 g</option>
+                                                <option value="200">200 g</option>
+                                                <option value="250" selected>250 g</option>
+                                                <option value="300">300 g</option>
+                                                <option value="400">400 g</option>
+                                                <option value="500">500 g</option>
+                                            </select>
+                                            <input type="checkbox" name="gerstenflocken" id="gerstenflocken">
+                                        </div>
+                                    </fieldset>     
+                                    <fieldset class="gersten-roggenschrot">
+                                        <label for="gersten-roggenschrot">Gersten- und Roggenschrot</label>
+                                        <div class="price-section-container">
+                                            <div class="price-section"></div>
+                                            <select id="gersten-roggenschrot-select" name="gerstenflocken">
+                                                <option value="75">75 g</option>
+                                                <option value="150">150 g</option>
+                                                <option value="200">200 g</option>
+                                                <option value="250" selected>250 g</option>
+                                                <option value="300">300 g</option>
+                                                <option value="400">400 g</option>
+                                                <option value="500">500 g</option>
+                                            </select>
+                                            <input type="checkbox" name="gersten-roggenschrot" id="gersten-roggenschrot">
+                                        </div>
+                                    </fieldset>     
+                                </div>
+                            </div>
+
+                            <div class="collapser-container">
+                                <div class="collapser-btn" >Frühstückscerealien</div>
+                                <div class="collapser-content">
+                                    <fieldset class="cornflakes">
+                                        <label for="cornflakes">Cornflakes (zuckerfrei und mit Honig)</label>
+                                        <div class="price-section-container">
+                                            <div class="price-section"></div>
+                                            <select id="cornflakes-select" name="cornflakes">
+                                                <option value="75">75 g</option>
+                                                <option value="150">150 g</option>
+                                                <option value="200">200 g</option>
+                                                <option value="250" selected>250 g</option>
+                                                <option value="300">300 g</option>
+                                                <option value="400">400 g</option>
+                                                <option value="500">500 g</option>
+                                            </select>
+                                            <input type="checkbox" name="cornflakes" id="cornflakes">
+                                        </div>
+                                    </fieldset>     
+                                    <fieldset class="crunchy-muesli">
+                                        <label for="crunchy-muesli">Crunchy Müsli (Schoko, Nuss, Honig)</label>
+                                        <div class="price-section-container">
+                                            <div class="price-section"></div>
+                                            <select id="crunchy-muesli-select" name="crunchy-muesli">
+                                                <option value="75">75 g</option>
+                                                <option value="150">150 g</option>
+                                                <option value="200">200 g</option>
+                                                <option value="250" selected>250 g</option>
+                                                <option value="300">300 g</option>
+                                                <option value="400">400 g</option>
+                                                <option value="500">500 g</option>
+                                            </select>
+                                            <input type="checkbox" name="crunchy-muesli" id="crunchy-muesli">
+                                        </div>
+                                    </fieldset>     
+                                    <fieldset class="muesliriegelstueckchen">
+                                        <label for="muesliriegelstueckchen">Müsliriegelstückchen</label>
+                                        <div class="price-section-container">
+                                            <div class="price-section"></div>
+                                            <select id="muesliriegelstueckchen-select" name="muesliriegelstueckchen">
+                                                <option value="75">75 g</option>
+                                                <option value="150">150 g</option>
+                                                <option value="200">200 g</option>
+                                                <option value="250" selected>250 g</option>
+                                                <option value="300">300 g</option>
+                                                <option value="400">400 g</option>
+                                                <option value="500">500 g</option>
+                                            </select>
+                                            <input type="checkbox" name="muesliriegelstueckchen" id="muesliriegelstueckchen">
+                                        </div>
+                                    </fieldset>     
+                                </div>
+                            </div>
+
+                            <div class="collapser-container">
+                                <div class="collapser-btn" >Sonstiges</div>
+                                <div class="collapser-content">
+                                    <fieldset class="weizenkleie">
+                                        <label for="weizenkleie">Weizenkleie</label>
+                                        <div class="price-section-container">
+                                            <div class="price-section"></div>
+                                            <select id="weizenkleie-select" name="weizenkleie">
+                                                <option value="75">75 g</option>
+                                                <option value="150">150 g</option>
+                                                <option value="200">200 g</option>
+                                                <option value="250" selected>250 g</option>
+                                                <option value="300">300 g</option>
+                                                <option value="400">400 g</option>
+                                                <option value="500">500 g</option>
+                                            </select>
+                                            <input type="checkbox" name="weizenkleie" id="weizenkleie">
+                                        </div>
+                                    </fieldset>       
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col medium-col-11 large-col-10">
+                            <div class="button-container">
+                                <button type="button" class="btn-next"><span>Weiter</span></button>
+                            </div>
+                        </div>
+                    </div>
+
+                     <div class="row form-container center" id="section-2">
+                        <div class="col medium-col-11 large-col-10 form-section" >
+                            <div class="collapser-container">
+                                <div class="collapser-btn" >Beeren</div>
+                                <div class="collapser-content">
+                                    <fieldset class="cranberries">
+                                        <label for="cranberries">Cranberries</label>
+                                        <div class="price-section-container">
+                                            <div class="price-section"></div>
+                                            <select id="cranberries-select" name="cranberries">
+                                                <option value="75">75 g</option>
+                                                <option value="150">150 g</option>
+                                                <option value="200">200 g</option>
+                                                <option value="250" selected>250 g</option>
+                                                <option value="300">300 g</option>
+                                                <option value="400">400 g</option>
+                                                <option value="500">500 g</option>
+                                            </select>
+                                            <input type="checkbox" name="cranberries" id="cranberries">
+                                        </div>
+                                    </fieldset>       
+                                    <fieldset class="goji-beeren">
+                                        <label for="goji-beeren">Goji-Beeren</label>
+                                        <div class="price-section-container">
+                                            <div class="price-section"></div>
+                                            <select id="goji-beeren-select" name="goji-beeren">
+                                                <option value="75">75 g</option>
+                                                <option value="150">150 g</option>
+                                                <option value="200">200 g</option>
+                                                <option value="250" selected>250 g</option>
+                                                <option value="300">300 g</option>
+                                                <option value="400">400 g</option>
+                                                <option value="500">500 g</option>
+                                            </select>
+                                            <input type="checkbox" name="goji-beeren" id="goji-beeren">
+                                        </div>
+                                    </fieldset>    
+                                    <fieldset class="heidelbeeren">
+                                        <label for="heidelbeeren">Heidelbeeren</label>
+                                        <div class="price-section-container">
+                                            <div class="price-section"></div>
+                                            <select id="heidelbeeren-select" name="heidelbeeren">
+                                                <option value="75">75 g</option>
+                                                <option value="150">150 g</option>
+                                                <option value="200">200 g</option>
+                                                <option value="250" selected>250 g</option>
+                                                <option value="300">300 g</option>
+                                                <option value="400">400 g</option>
+                                                <option value="500">500 g</option>
+                                            </select>
+                                            <input type="checkbox" name="heidelbeeren" id="heidelbeeren">
+                                        </div>
+                                    </fieldset>  
+                                    <fieldset class="erdbeerscheiben">
+                                        <label for="erdbeerscheiben">Erdbeerscheiben</label>
+                                        <div class="price-section-container">
+                                            <div class="price-section"></div>
+                                            <select id="erdbeerscheiben-select" name="erdbeerscheiben">
+                                                <option value="75">75 g</option>
+                                                <option value="150">150 g</option>
+                                                <option value="200">200 g</option>
+                                                <option value="250" selected>250 g</option>
+                                                <option value="300">300 g</option>
+                                                <option value="400">400 g</option>
+                                                <option value="500">500 g</option>
+                                            </select>
+                                            <input type="checkbox" name="erdbeerscheiben" id="erdbeerscheiben">
+                                        </div>
+                                    </fieldset>  
+                                    <fieldset class="kirschen">
+                                        <label for="kirschen">Kirschen</label>
+                                        <div class="price-section-container">
+                                            <div class="price-section"></div>
+                                            <select id="kirschen-select" name="kirschen">
+                                                <option value="75">75 g</option>
+                                                <option value="150">150 g</option>
+                                                <option value="200">200 g</option>
+                                                <option value="250" selected>250 g</option>
+                                                <option value="300">300 g</option>
+                                                <option value="400">400 g</option>
+                                                <option value="500">500 g</option>
+                                            </select>
+                                            <input type="checkbox" name="kirschen" id="kirschen">
+                                        </div>
+                                    </fieldset> 
+                                </div>
+                            </div>
+
+                            <div class="collapser-container">
+                                <div class="collapser-btn" >Tropische Früchte</div>
+                                <div class="collapser-content">
+                                    <fieldset class="mangostueckchen">
+                                        <label for="mangostueckchen">Mangostückchen</label>
+                                        <div class="price-section-container">
+                                            <div class="price-section"></div>
+                                            <select id="mangostueckchen-select" name="mangostueckchen">
+                                                <option value="75">75 g</option>
+                                                <option value="150">150 g</option>
+                                                <option value="200">200 g</option>
+                                                <option value="250" selected>250 g</option>
+                                                <option value="300">300 g</option>
+                                                <option value="400">400 g</option>
+                                                <option value="500">500 g</option>
+                                            </select>
+                                            <input type="checkbox" name="mangostueckchen" id="mangostueckchen">
+                                        </div>
+                                    </fieldset>       
+                                    <fieldset class="ananasstuecke">
+                                        <label for="ananasstuecke">Ananasstücke</label>
+                                        <div class="price-section-container">
+                                            <div class="price-section"></div>
+                                            <select id="ananasstuecke-select" name="ananasstuecke">
+                                                <option value="75">75 g</option>
+                                                <option value="150">150 g</option>
+                                                <option value="200">200 g</option>
+                                                <option value="250" selected>250 g</option>
+                                                <option value="300">300 g</option>
+                                                <option value="400">400 g</option>
+                                                <option value="500">500 g</option>
+                                            </select>
+                                            <input type="checkbox" name="ananasstuecke" id="ananasstuecke">
+                                        </div>
+                                    </fieldset>    
+                                    <fieldset class="bananenchips">
+                                        <label for="bananenchips">Bananenchips</label>
+                                        <div class="price-section-container">
+                                            <div class="price-section"></div>
+                                            <select id="bananenchips-select" name="bananenchips">
+                                                <option value="75">75 g</option>
+                                                <option value="150">150 g</option>
+                                                <option value="200">200 g</option>
+                                                <option value="250" selected>250 g</option>
+                                                <option value="300">300 g</option>
+                                                <option value="400">400 g</option>
+                                                <option value="500">500 g</option>
+                                            </select>
+                                            <input type="checkbox" name="bananenchips" id="bananenchips">
+                                        </div>
+                                    </fieldset>  
+                                </div>
+                            </div>
+
+                            <div class="collapser-container">
+                                <div class="collapser-btn" >Steinfrüchte</div>
+                                <div class="collapser-content">
+                                    <fieldset class="aprikosen">
+                                        <label for="aprikosen">Aprikosen</label>
+                                        <div class="price-section-container">
+                                            <div class="price-section"></div>
+                                            <select id="aprikosen-select" name="aprikosen">
+                                                <option value="75">75 g</option>
+                                                <option value="150">150 g</option>
+                                                <option value="200">200 g</option>
+                                                <option value="250" selected>250 g</option>
+                                                <option value="300">300 g</option>
+                                                <option value="400">400 g</option>
+                                                <option value="500">500 g</option>
+                                            </select>
+                                            <input type="checkbox" name="aprikosen" id="aprikosen">
+                                        </div>
+                                    </fieldset>
+                                </div>
+                            </div>
+
+                            <div class="collapser-container">
+                                <div class="collapser-btn" >Kernfrüchte</div>
+                                <div class="collapser-content">
+                                    <fieldset class="apfelringe">
+                                        <label for="apfelringe">Apfelringe</label>
+                                        <div class="price-section-container">
+                                            <div class="price-section"></div>
+                                            <select id="apfelringe-select" name="apfelringe">
+                                                <option value="75">75 g</option>
+                                                <option value="150">150 g</option>
+                                                <option value="200">200 g</option>
+                                                <option value="250" selected>250 g</option>
+                                                <option value="300">300 g</option>
+                                                <option value="400">400 g</option>
+                                                <option value="500">500 g</option>
+                                            </select>
+                                            <input type="checkbox" name="apfelringe" id="apfelringe">
+                                        </div>
+                                    </fieldset>
+                                </div>
+                            </div>
+
+                            <div class="collapser-container">
+                                <div class="collapser-btn" >Exotische Früchte</div>
+                                <div class="collapser-content">
+                                    <fieldset class="datteln">
+                                        <label for="datteln">Datteln</label>
+                                        <div class="price-section-container">
+                                            <div class="price-section"></div>
+                                            <select id="datteln-select" name="datteln">
+                                                <option value="75">75 g</option>
+                                                <option value="150">150 g</option>
+                                                <option value="200">200 g</option>
+                                                <option value="250" selected>250 g</option>
+                                                <option value="300">300 g</option>
+                                                <option value="400">400 g</option>
+                                                <option value="500">500 g</option>
+                                            </select>
+                                            <input type="checkbox" name="datteln" id="datteln">
+                                        </div>
+                                    </fieldset>
+                                    <fieldset class="feigen">
+                                        <label for="feigen">Feigen</label>
+                                        <div class="price-section-container">
+                                            <div class="price-section"></div>
+                                            <select id="feigen-select" name="feigen">
+                                                <option value="75">75 g</option>
+                                                <option value="150">150 g</option>
+                                                <option value="200">200 g</option>
+                                                <option value="250" selected>250 g</option>
+                                                <option value="300">300 g</option>
+                                                <option value="400">400 g</option>
+                                                <option value="500">500 g</option>
+                                            </select>
+                                            <input type="checkbox" name="feigen" id="feigen">
+                                        </div>
+                                    </fieldset>
+                                </div>
+                            </div>
+
+                            <div class="collapser-container">
+                                <div class="collapser-btn" >Weinbeeren</div>
+                                <div class="collapser-content">
+                                    <fieldset class="rosinen">
+                                        <label for="rosinen">Rosinen</label>
+                                        <div class="price-section-container">
+                                            <div class="price-section"></div>
+                                            <select id="rosinen-select" name="rosinen">
+                                                <option value="75">75 g</option>
+                                                <option value="150">150 g</option>
+                                                <option value="200">200 g</option>
+                                                <option value="250" selected>250 g</option>
+                                                <option value="300">300 g</option>
+                                                <option value="400">400 g</option>
+                                                <option value="500">500 g</option>
+                                            </select>
+                                            <input type="checkbox" name="rosinen" id="rosinen">
+                                        </div>
+                                    </fieldset>
+                                </div>
+                            </div>
+                        </div>    
+                        <div class="col medium-col-11 large-col-10">
+                            <div class="button-container">
+                                <button type="button" class="btn-back"><span>Zurück</span></button>
+                                <button type="button" class="btn-next"><span>Weiter</span></button>
+                            </div>
+                        </div>
+                     </div>
+
+                    <div class="row form-container center" id="section-3">
+                        <div class="col medium-col-11 large-col-10 form-section">
+
+                            <div class="collapser-container">
+                                <div class="collapser-btn" >Nüsse</div>
+                                <div class="collapser-content">
+                                    <fieldset class="mandeln">
+                                        <label for="mandeln">Mandeln (geröstet, gehackt, blättrig)</label>
+                                        <div class="price-section-container">
+                                            <div class="price-section"></div>
+                                            <select id="mandeln-select" name="mandeln">
+                                                <option value="75">75 g</option>
+                                                <option value="150">150 g</option>
+                                                <option value="200">200 g</option>
+                                                <option value="250" selected>250 g</option>
+                                                <option value="300">300 g</option>
+                                                <option value="400">400 g</option>
+                                                <option value="500">500 g</option>
+                                            </select>
+                                            <input type="checkbox" name="mandeln" id="mandeln">
+                                        </div>
+                                    </fieldset>
+                                    <fieldset class="walnuesse">
+                                        <label for="walnuesse">Walnüsse</label>
+                                        <div class="price-section-container">
+                                            <div class="price-section"></div>
+                                            <select id="walnuesse-select" name="walnuesse">
+                                                <option value="75">75 g</option>
+                                                <option value="150">150 g</option>
+                                                <option value="200">200 g</option>
+                                                <option value="250" selected>250 g</option>
+                                                <option value="300">300 g</option>
+                                                <option value="400">400 g</option>
+                                                <option value="500">500 g</option>
+                                            </select>
+                                            <input type="checkbox" name="walnuesse" id="walnuesse">
+                                        </div>
+                                    </fieldset>
+                                    <fieldset class="haselnuesse">
+                                        <label for="haselnuesse">Haselnüsse</label>
+                                        <div class="price-section-container">
+                                            <div class="price-section"></div>
+                                            <select id="haselnuesse-select" name="haselnuesse">
+                                                <option value="75">75 g</option>
+                                                <option value="150">150 g</option>
+                                                <option value="200">200 g</option>
+                                                <option value="250" selected>250 g</option>
+                                                <option value="300">300 g</option>
+                                                <option value="400">400 g</option>
+                                                <option value="500">500 g</option>
+                                            </select>
+                                            <input type="checkbox" name="haselnuesse" id="haselnuesse">
+                                        </div>
+                                    </fieldset>
+                                    <fieldset class="pistazien">
+                                        <label for="pistazien">Pistazien</label>
+                                        <div class="price-section-container">
+                                            <div class="price-section"></div>
+                                            <select id="pistazien-select" name="pistazien">
+                                                <option value="75">75 g</option>
+                                                <option value="150">150 g</option>
+                                                <option value="200">200 g</option>
+                                                <option value="250" selected>250 g</option>
+                                                <option value="300">300 g</option>
+                                                <option value="400">400 g</option>
+                                                <option value="500">500 g</option>
+                                            </select>
+                                            <input type="checkbox" name="pistazien" id="pistazien">
+                                        </div>
+                                    </fieldset>
+                                    <fieldset class="cashewkerne">
+                                        <label for="cashewkerne">Cashewkerne</label>
+                                        <div class="price-section-container">
+                                            <div class="price-section"></div>
+                                            <select id="cashewkerne-select" name="cashewkerne">
+                                                <option value="75">75 g</option>
+                                                <option value="150">150 g</option>
+                                                <option value="200">200 g</option>
+                                                <option value="250" selected>250 g</option>
+                                                <option value="300">300 g</option>
+                                                <option value="400">400 g</option>
+                                                <option value="500">500 g</option>
+                                            </select>
+                                            <input type="checkbox" name="cashewkerne" id="cashewkerne">
+                                        </div>
+                                    </fieldset>
+                                    <fieldset class="pekanüsse">
+                                        <label for="pekanüsse">Pekanüsse</label>
+                                        <div class="price-section-container">
+                                            <div class="price-section"></div>
+                                            <select id="pekanüsse-select" name="pekanüsse">
+                                                <option value="75">75 g</option>
+                                                <option value="150">150 g</option>
+                                                <option value="200">200 g</option>
+                                                <option value="250" selected>250 g</option>
+                                                <option value="300">300 g</option>
+                                                <option value="400">400 g</option>
+                                                <option value="500">500 g</option>
+                                            </select>
+                                            <input type="checkbox" name="pekanüsse" id="pekanüsse">
+                                        </div>
+                                    </fieldset>
+                                </div>
+                            </div>
+
+                            <div class="collapser-container">
+                                <div class="collapser-btn" >Samen</div>
+                                <div class="collapser-content">
+                                    <fieldset class="sonnenblumenkerne">
+                                        <label for="sonnenblumenkerne">Sonnenblumenkerne</label>
+                                        <div class="price-section-container">
+                                            <div class="price-section"></div>
+                                            <select id="sonnenblumenkerne-select" name="sonnenblumenkerne">
+                                                <option value="75">75 g</option>
+                                                <option value="150">150 g</option>
+                                                <option value="200">200 g</option>
+                                                <option value="250" selected>250 g</option>
+                                                <option value="300">300 g</option>
+                                                <option value="400">400 g</option>
+                                                <option value="500">500 g</option>
+                                            </select>
+                                            <input type="checkbox" name="sonnenblumenkerne" id="sonnenblumenkerne">
+                                        </div>
+                                    </fieldset>
+                                    <fieldset class="kuerbiskerne">
+                                        <label for="kuerbiskerne">Kürbiskerne</label>
+                                        <div class="price-section-container">
+                                            <div class="price-section"></div>
+                                            <select id="kuerbiskerne-select" name="kuerbiskerne">
+                                                <option value="75">75 g</option>
+                                                <option value="150">150 g</option>
+                                                <option value="200">200 g</option>
+                                                <option value="250" selected>250 g</option>
+                                                <option value="300">300 g</option>
+                                                <option value="400">400 g</option>
+                                                <option value="500">500 g</option>
+                                            </select>
+                                            <input type="checkbox" name="kuerbiskerne" id="kuerbiskerne">
+                                        </div>
+                                    </fieldset>
+                                    <fieldset class="chiasamen">
+                                        <label for="chiasamen">Chiasamen</label>
+                                        <div class="price-section-container">
+                                            <div class="price-section"></div>
+                                            <select id="chiasamen-select" name="chiasamen">
+                                                <option value="75">75 g</option>
+                                                <option value="150">150 g</option>
+                                                <option value="200">200 g</option>
+                                                <option value="250" selected>250 g</option>
+                                                <option value="300">300 g</option>
+                                                <option value="400">400 g</option>
+                                                <option value="500">500 g</option>
+                                            </select>
+                                            <input type="checkbox" name="chiasamen" id="chiasamen">
+                                        </div>
+                                    </fieldset>
+                                    <fieldset class="leinsamen">
+                                        <label for="leinsamen">Leinsamen</label>
+                                        <div class="price-section-container">
+                                            <div class="price-section"></div>
+                                            <select id="leinsamen-select" name="leinsamen">
+                                                <option value="75">75 g</option>
+                                                <option value="150">150 g</option>
+                                                <option value="200">200 g</option>
+                                                <option value="250" selected>250 g</option>
+                                                <option value="300">300 g</option>
+                                                <option value="400">400 g</option>
+                                                <option value="500">500 g</option>
+                                            </select>
+                                            <input type="checkbox" name="leinsamen" id="leinsamen">
+                                        </div>
+                                    </fieldset>
+                                    <fieldset class="hanfsamen">
+                                        <label for="hanfsamen">Hanfsamen</label>
+                                        <div class="price-section-container">
+                                            <div class="price-section"></div>
+                                            <select id="hanfsamen-select" name="hanfsamen">
+                                                <option value="75">75 g</option>
+                                                <option value="150">150 g</option>
+                                                <option value="200">200 g</option>
+                                                <option value="250" selected>250 g</option>
+                                                <option value="300">300 g</option>
+                                                <option value="400">400 g</option>
+                                                <option value="500">500 g</option>
+                                            </select>
+                                            <input type="checkbox" name="hanfsamen" id="hanfsamen">
+                                        </div>
+                                    </fieldset>
+                                    <fieldset class="sesamsamen">
+                                        <label for="sesamsamen">Sesamsamen</label>
+                                        <div class="price-section-container">
+                                            <div class="price-section"></div>
+                                            <select id="sesamsamen-select" name="sesamsamen">
+                                                <option value="75">75 g</option>
+                                                <option value="150">150 g</option>
+                                                <option value="200">200 g</option>
+                                                <option value="250" selected>250 g</option>
+                                                <option value="300">300 g</option>
+                                                <option value="400">400 g</option>
+                                                <option value="500">500 g</option>
+                                            </select>
+                                            <input type="checkbox" name="sesamsamen" id="sesamsamen">
+                                        </div>
+                                    </fieldset>
+                                </div>
+                            </div>
+
+ 
+                        </div>
+                        <div class="col medium-col-11 large-col-10">
+                            <div class="button-container">
+                                <button type="button" class="btn-back"><span>Zurück</span></button>
+                                <button type="button" class="btn-next"><span>Weiter</span></button>
+                            </div>    
+                        </div>
+                    </div>
+
+                    <div class="row form-container center" id="section-4">
+                        <div class="col medium-col-11 large-col-10 form-section">
+                            <div class="collapser-container">
+                                <div class="collapser-btn" >Superfood-Pulver</div>
+                                <div class="collapser-content">
+                                    <fieldset class="matcha-pulver">
+                                        <label for="matcha-pulver">Matcha-Pulver</label>
+                                        <div class="price-section-container">
+                                            <div class="price-section"></div>
+                                            <select id="matcha-pulver-select" name="matcha-pulver">
+                                                <option value="75">75 g</option>
+                                                <option value="150">150 g</option>
+                                                <option value="200">200 g</option>
+                                                <option value="250" selected>250 g</option>
+                                                <option value="300">300 g</option>
+                                                <option value="400">400 g</option>
+                                                <option value="500">500 g</option>
+                                            </select>
+                                            <input type="checkbox" name="matcha-pulver" id="matcha-pulver">
+                                        </div>
+                                    </fieldset>
+                                    <fieldset class="maca-pulver">
+                                        <label for="maca-pulver">Maca-Pulver</label>
+                                        <div class="price-section-container">
+                                            <div class="price-section"></div>
+                                            <select id="maca-pulver-select" name="maca-pulver">
+                                                <option value="75">75 g</option>
+                                                <option value="150">150 g</option>
+                                                <option value="200">200 g</option>
+                                                <option value="250" selected>250 g</option>
+                                                <option value="300">300 g</option>
+                                                <option value="400">400 g</option>
+                                                <option value="500">500 g</option>
+                                            </select>
+                                            <input type="checkbox" name="maca-pulver" id="maca-pulver">
+                                        </div>
+                                    </fieldset>
+                                    <fieldset class="baobab-pulver">
+                                        <label for="baobab-pulver">Baobab-Pulver</label>
+                                        <div class="price-section-container">
+                                            <div class="price-section"></div>
+                                            <select id="baobab-pulver-select" name="baobab-pulver">
+                                                <option value="75">75 g</option>
+                                                <option value="150">150 g</option>
+                                                <option value="200">200 g</option>
+                                                <option value="250" selected>250 g</option>
+                                                <option value="300">300 g</option>
+                                                <option value="400">400 g</option>
+                                                <option value="500">500 g</option>
+                                            </select>
+                                            <input type="checkbox" name="baobab-pulver" id="baobab-pulver">
+                                        </div>
+                                    </fieldset>
+                                    <fieldset class="spirulina">
+                                        <label for="spirulina">Spirulina</label>
+                                        <div class="price-section-container">
+                                            <div class="price-section"></div>
+                                            <select id="spirulina-select" name="spirulina">
+                                                <option value="75">75 g</option>
+                                                <option value="150">150 g</option>
+                                                <option value="200">200 g</option>
+                                                <option value="250" selected>250 g</option>
+                                                <option value="300">300 g</option>
+                                                <option value="400">400 g</option>
+                                                <option value="500">500 g</option>
+                                            </select>
+                                            <input type="checkbox" name="spirulina" id="spirulina">
+                                        </div>
+                                    </fieldset>
+                                    <fieldset class="lucuma-pulver">
+                                        <label for="lucuma-pulver">Lucuma-Pulver</label>
+                                        <div class="price-section-container">
+                                            <div class="price-section"></div>
+                                            <select id="lucuma-pulver-select" name="lucuma-pulver">
+                                                <option value="75">75 g</option>
+                                                <option value="150">150 g</option>
+                                                <option value="200">200 g</option>
+                                                <option value="250" selected>250 g</option>
+                                                <option value="300">300 g</option>
+                                                <option value="400">400 g</option>
+                                                <option value="500">500 g</option>
+                                            </select>
+                                            <input type="checkbox" name="lucuma-pulver" id="lucuma-pulver">
+                                        </div>
+                                    </fieldset>
+                                    <fieldset class="weizengraspulver">
+                                        <label for="weizengraspulver">Weizengraspulver</label>
+                                        <div class="price-section-container">
+                                            <div class="price-section"></div>
+                                            <select id="weizengraspulver-select" name="weizengraspulver">
+                                                <option value="75">75 g</option>
+                                                <option value="150">150 g</option>
+                                                <option value="200">200 g</option>
+                                                <option value="250" selected>250 g</option>
+                                                <option value="300">300 g</option>
+                                                <option value="400">400 g</option>
+                                                <option value="500">500 g</option>
+                                            </select>
+                                            <input type="checkbox" name="weizengraspulver" id="weizengraspulver">
+                                        </div>
+                                    </fieldset>
+                                    <fieldset class="gojipulver">
+                                        <label for="gojipulver">Gojipulver</label>
+                                        <div class="price-section-container">
+                                            <div class="price-section"></div>
+                                            <select id="gojipulver-select" name="gojipulver">
+                                                <option value="75">75 g</option>
+                                                <option value="150">150 g</option>
+                                                <option value="200">200 g</option>
+                                                <option value="250" selected>250 g</option>
+                                                <option value="300">300 g</option>
+                                                <option value="400">400 g</option>
+                                                <option value="500">500 g</option>
+                                            </select>
+                                            <input type="checkbox" name="gojipulver" id="gojipulver">
+                                        </div>
+                                    </fieldset>
+                                </div>
+                            </div>
+
+                            <div class="collapser-container">
+                                <div class="collapser-btn" >Getrocknete Früchte und Beeren</div>
+                                <div class="collapser-content">
+                                    <fieldset class="acai-beeren">
+                                        <label for="acai-beeren">Acai-Beeren</label>
+                                        <div class="price-section-container">
+                                            <div class="price-section"></div>
+                                            <select id="acai-beeren-select" name="acai-beeren">
+                                                <option value="75">75 g</option>
+                                                <option value="150">150 g</option>
+                                                <option value="200">200 g</option>
+                                                <option value="250" selected>250 g</option>
+                                                <option value="300">300 g</option>
+                                                <option value="400">400 g</option>
+                                                <option value="500">500 g</option>
+                                            </select>
+                                            <input type="checkbox" name="acai-beeren" id="acai-beeren">
+                                        </div>
+                                    </fieldset>
+                                    <fieldset class="trockene-maulbeeren">
+                                        <label for="trockene-maulbeeren">Trockene Maulbeeren</label>
+                                        <div class="price-section-container">
+                                            <div class="price-section"></div>
+                                            <select id="trockene-maulbeeren-select" name="trockene-maulbeeren">
+                                                <option value="75">75 g</option>
+                                                <option value="150">150 g</option>
+                                                <option value="200">200 g</option>
+                                                <option value="250" selected>250 g</option>
+                                                <option value="300">300 g</option>
+                                                <option value="400">400 g</option>
+                                                <option value="500">500 g</option>
+                                            </select>
+                                            <input type="checkbox" name="trockene-maulbeeren" id="trockene-maulbeeren">
+                                        </div>
+                                    </fieldset>
+                                </div>
+                            </div>
+
+                            <div class="collapser-container">
+                                <div class="collapser-btn" >Kakao und Kokos</div>
+                                <div class="collapser-content">
+                                    <fieldset class="kakaonibs">
+                                        <label for="kakaonibs">Kakaonibs</label>
+                                        <div class="price-section-container">
+                                            <div class="price-section"></div>
+                                            <select id="kakaonibs-select" name="kakaonibs">
+                                                <option value="75">75 g</option>
+                                                <option value="150">150 g</option>
+                                                <option value="200">200 g</option>
+                                                <option value="250" selected>250 g</option>
+                                                <option value="300">300 g</option>
+                                                <option value="400">400 g</option>
+                                                <option value="500">500 g</option>
+                                            </select>
+                                            <input type="checkbox" name="kakaonibs" id="kakaonibs">
+                                        </div>
+                                    </fieldset>
+                                    <fieldset class="kokosflocken">
+                                        <label for="kokosflocken">Kokosflocken</label>
+                                        <div class="price-section-container">
+                                            <div class="price-section"></div>
+                                            <select id="kokosflocken-select" name="kokosflocken">
+                                                <option value="75">75 g</option>
+                                                <option value="150">150 g</option>
+                                                <option value="200">200 g</option>
+                                                <option value="250" selected>250 g</option>
+                                                <option value="300">300 g</option>
+                                                <option value="400">400 g</option>
+                                                <option value="500">500 g</option>
+                                            </select>
+                                            <input type="checkbox" name="kokosflocken" id="kokosflocken">
+                                        </div>
+                                    </fieldset>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col medium-col-11 large-col-10">
+                            <div class="button-container">
+                                <button type="button" class="btn-back"><span>Zurück</span></button>
+                                <button type="button" class="btn-next"><span>Weiter</span></button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="row form-container center" id="section-5">
+                        <div class="col medium-col-11 large-col-10 form-section">
+                            <div class="collapser-container">
+                                <div class="collapser-btn" >Schokoladen- und Karamellstückchen</div>
+                                <div class="collapser-content">
+                                    <fieldset class="dunkle-schokoladenstuecke">
+                                        <label for="dunkle-schokoladenstuecke">Dunkle Schokoladenstücke</label>
+                                        <div class="price-section-container">
+                                            <div class="price-section"></div>
+                                            <select id="dunkle-schokoladenstuecke-select" name="dunkle-schokoladenstuecke">
+                                                <option value="75">75 g</option>
+                                                <option value="150">150 g</option>
+                                                <option value="200">200 g</option>
+                                                <option value="250" selected>250 g</option>
+                                                <option value="300">300 g</option>
+                                                <option value="400">400 g</option>
+                                                <option value="500">500 g</option>
+                                            </select>
+                                            <input type="checkbox" name="dunkle-schokoladenstuecke" id="dunkle-schokoladenstuecke">
+                                        </div>
+                                    </fieldset>
+                                    <fieldset class="weiße-schokoladenstuecke">
+                                        <label for="weiße-schokoladenstuecke">Weiße Schokoladenstücke</label>
+                                        <div class="price-section-container">
+                                            <div class="price-section"></div>
+                                            <select id="weiße-schokoladenstuecke-select" name="weiße-schokoladenstuecke">
+                                                <option value="75">75 g</option>
+                                                <option value="150">150 g</option>
+                                                <option value="200">200 g</option>
+                                                <option value="250" selected>250 g</option>
+                                                <option value="300">300 g</option>
+                                                <option value="400">400 g</option>
+                                                <option value="500">500 g</option>
+                                            </select>
+                                            <input type="checkbox" name="weiße-schokoladenstuecke" id="weiße-schokoladenstuecke">
+                                        </div>
+                                    </fieldset>
+                                    <fieldset class="karamellstueckchen">
+                                        <label for="karamellstueckchen">Karamellstückchen</label>
+                                        <div class="price-section-container">
+                                            <div class="price-section"></div>
+                                            <select id="karamellstueckchen-select" name="karamellstueckchen">
+                                                <option value="75">75 g</option>
+                                                <option value="150">150 g</option>
+                                                <option value="200">200 g</option>
+                                                <option value="250" selected>250 g</option>
+                                                <option value="300">300 g</option>
+                                                <option value="400">400 g</option>
+                                                <option value="500">500 g</option>
+                                            </select>
+                                            <input type="checkbox" name="karamellstueckchen" id="karamellstueckchen">
+                                        </div>
+                                    </fieldset>
+                                </div>
+                            </div>
+                            <div class="collapser-container">
+                                <div class="collapser-btn" >Kokosprodukte</div>
+                                <div class="collapser-content">
+                                    <fieldset class="kokoschips">
+                                        <label for="kokoschips">Kokoschips</label>
+                                        <div class="price-section-container">
+                                            <div class="price-section"></div>
+                                            <select id="kokoschips-select" name="kokoschips">
+                                                <option value="75">75 g</option>
+                                                <option value="150">150 g</option>
+                                                <option value="200">200 g</option>
+                                                <option value="250" selected>250 g</option>
+                                                <option value="300">300 g</option>
+                                                <option value="400">400 g</option>
+                                                <option value="500">500 g</option>
+                                            </select>
+                                            <input type="checkbox" name="kokoschips" id="kokoschips">
+                                        </div>
+                                    </fieldset>
+                                </div>
+                            </div>
+                            <div class="collapser-container">
+                                <div class="collapser-btn" >Süßungsmittel</div>
+                                <div class="collapser-content">
+                                    <fieldset class="honig">
+                                        <label for="honig">Honig</label>
+                                        <div class="price-section-container">
+                                            <div class="price-section"></div>
+                                            <select id="honig-select" name="honig">
+                                                <option value="75">75 g</option>
+                                                <option value="150">150 g</option>
+                                                <option value="200">200 g</option>
+                                                <option value="250" selected>250 g</option>
+                                                <option value="300">300 g</option>
+                                                <option value="400">400 g</option>
+                                                <option value="500">500 g</option>
+                                            </select>
+                                            <input type="checkbox" name="honig" id="honig">
+                                        </div>
+                                    </fieldset>
+                                    <fieldset class="ahornsirup">
+                                        <label for="ahornsirup">Ahornsirup</label>
+                                        <div class="price-section-container">
+                                            <div class="price-section"></div>
+                                            <select id="ahornsirup-select" name="ahornsirup">
+                                                <option value="75">75 g</option>
+                                                <option value="150">150 g</option>
+                                                <option value="200">200 g</option>
+                                                <option value="250" selected>250 g</option>
+                                                <option value="300">300 g</option>
+                                                <option value="400">400 g</option>
+                                                <option value="500">500 g</option>
+                                            </select>
+                                            <input type="checkbox" name="ahornsirup" id="ahornsirup">
+                                        </div>
+                                    </fieldset>
+                                    <fieldset class="agavendicksaft">
+                                        <label for="agavendicksaft">Agavendicksaft</label>
+                                        <div class="price-section-container">
+                                            <div class="price-section"></div>
+                                            <select id="agavendicksaft-select" name="agavendicksaft">
+                                                <option value="75">75 g</option>
+                                                <option value="150">150 g</option>
+                                                <option value="200">200 g</option>
+                                                <option value="250" selected>250 g</option>
+                                                <option value="300">300 g</option>
+                                                <option value="400">400 g</option>
+                                                <option value="500">500 g</option>
+                                            </select>
+                                            <input type="checkbox" name="agavendicksaft" id="agavendicksaft">
+                                        </div>
+                                    </fieldset>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col medium-col-11 large-col-10">
+                            <div class="button-container">
+                                <button type="button" class="btn-back"><span>Zurück</span></button>
+                                <button type="button" class="btn-next"><span>Weiter</span></button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="row form-container center" id="section-6">
+                        <div class="col medium-col-11 large-col-10 form-section">
+                            <div class="collapser-container">
+                                <div class="collapser-btn" >Pflanzliche Milchalternativen</div>
+                                <div class="collapser-content">
+                                    <fieldset class="hafermilch">
+                                        <label for="hafermilch">Hafermilch</label>
+                                        <div class="price-section-container">
+                                            <div class="price-section"></div>
+                                            <select id="hafermilch-select" name="hafermilch">
+                                                <option value="150">75 l</option>
+                                                <option value="150">150 l</option>
+                                                <option value="150">200 l</option>
+                                                <option value="250" selected>250 l</option>
+                                                <option value="150">300 l</option>
+                                                <option value="150">400 l</option>
+                                                <option value="500">500 l</option>
+                                            </select>
+                                            <input type="checkbox" name="hafermilch" id="hafermilch">
+                                        </div>
+                                    </fieldset>
+                                    <fieldset class="mandelmilch">
+                                        <label for="mandelmilch">Mandelmilch</label>
+                                        <div class="price-section-container">
+                                            <div class="price-section"></div>
+                                            <select id="mandelmilch-select" name="mandelmilch">
+                                                <option value="150">75 l</option>
+                                                <option value="150">150 l</option>
+                                                <option value="150">200 l</option>
+                                                <option value="250" selected>250 l</option>
+                                                <option value="150">300 l</option>
+                                                <option value="150">400 l</option>
+                                                <option value="500">500 l</option>
+                                            </select>
+                                            <input type="checkbox" name="mandelmilch" id="mandelmilch">
+                                        </div>
+                                    </fieldset>
+                                    <fieldset class="kokosmilch">
+                                        <label for="kokosmilch">Kokosmilch</label>
+                                        <div class="price-section-container">
+                                            <div class="price-section"></div>
+                                            <select id="kokosmilch-select" name="kokosmilch">
+                                                <option value="150">75 l</option>
+                                                <option value="150">150 l</option>
+                                                <option value="150">200 l</option>
+                                                <option value="250" selected>250 l</option>
+                                                <option value="150">300 l</option>
+                                                <option value="150">400 l</option>
+                                                <option value="500">500 l</option>
+                                            </select>
+                                            <input type="checkbox" name="kokosmilch" id="kokosmilch">
+                                        </div>
+                                    </fieldset>
+                                    <fieldset class="sojamilch">
+                                        <label for="sojamilch">Sojamilch</label>
+                                        <div class="price-section-container">
+                                            <div class="price-section"></div>
+                                            <select id="sojamilch-select" name="sojamilch">
+                                                <option value="150">75 l</option>
+                                                <option value="150">150 l</option>
+                                                <option value="150">200 l</option>
+                                                <option value="250" selected>250 l</option>
+                                                <option value="150">300 l</option>
+                                                <option value="150">400 l</option>
+                                                <option value="500">500 l</option>
+                                            </select>
+                                            <input type="checkbox" name="sojamilch" id="sojamilch">
+                                        </div>
+                                    </fieldset>
+                                    <fieldset class="reismilch">
+                                        <label for="reismilch">Reismilch</label>
+                                        <div class="price-section-container">
+                                            <div class="price-section"></div>
+                                            <select id="reismilch-select" name="reismilch">
+                                                <option value="150">75 l</option>
+                                                <option value="150">150 l</option>
+                                                <option value="150">200 l</option>
+                                                <option value="250" selected>250 l</option>
+                                                <option value="150">300 l</option>
+                                                <option value="150">400 l</option>
+                                                <option value="500">500 l</option>
+                                            </select>
+                                            <input type="checkbox" name="reismilch" id="reismilch">
+                                        </div>
+                                    </fieldset>
+                                </div>
+                            </div>
+                            <div class="collapser-container">
+                                <div class="collapser-btn" >Tierische Milchprodukte</div>
+                                <div class="collapser-content">
+                                    <fieldset class="vollmilch">
+                                        <label for="vollmilch">Vollmilch</label>
+                                        <div class="price-section-container">
+                                            <div class="price-section"></div>
+                                            <select id="vollmilch-select" name="vollmilch">
+                                                <option value="150">75 l</option>
+                                                <option value="150">150 l</option>
+                                                <option value="150">200 l</option>
+                                                <option value="250" selected>250 l</option>
+                                                <option value="150">300 l</option>
+                                                <option value="150">400 l</option>
+                                                <option value="500">500 l</option>
+                                            </select>
+                                            <input type="checkbox" name="vollmilch" id="vollmilch">
+                                        </div>
+                                    </fieldset>
+                                    <fieldset class="joghurt">
+                                        <label for="joghurt">Joghurt</label>
+                                        <div class="price-section-container">
+                                            <div class="price-section"></div>
+                                            <select id="joghurt-select" name="joghurt">
+                                                <option value="150">75 l</option>
+                                                <option value="150">150 l</option>
+                                                <option value="150">200 l</option>
+                                                <option value="250" selected>250 l</option>
+                                                <option value="150">300 l</option>
+                                                <option value="150">400 l</option>
+                                                <option value="500">500 l</option>
+                                            </select>
+                                            <input type="checkbox" name="joghurt" id="joghurt">
+                                        </div>
+                                    </fieldset>
+                                </div>
+                            </div>
+                            <div class="collapser-container">
+                                <div class="collapser-btn" >Andere Getränke</div>
+                                <div class="collapser-content">
+                                    <fieldset class="wasser">
+                                        <label for="wasser">Wasser (sehr weich und mikrofiltriert)</label>
+                                        <div class="price-section-container">
+                                            <div class="price-section"></div>
+                                            <select id="wasser-select" name="wasser">
+                                                <option value="150">75 l</option>
+                                                <option value="150">150 l</option>
+                                                <option value="150">200 l</option>
+                                                <option value="250" selected>250 l</option>
+                                                <option value="150">300 l</option>
+                                                <option value="150">400 l</option>
+                                                <option value="500">500 l</option>
+                                            </select>
+                                            <input type="checkbox" name="wasser" id="wasser">
+                                        </div>
+                                    </fieldset>
+                                    <fieldset class="kokoswasser">
+                                        <label for="kokoswasser">Kokoswasser</label>
+                                        <div class="price-section-container">
+                                            <div class="price-section"></div>
+                                            <select id="kokoswasser-select" name="kokoswasser">
+                                                <option value="150">75 l</option>
+                                                <option value="150">150 l</option>
+                                                <option value="150">200 l</option>
+                                                <option value="250" selected>250 l</option>
+                                                <option value="150">300 l</option>
+                                                <option value="150">400 l</option>
+                                                <option value="500">500 l</option>
+                                            </select>
+                                            <input type="checkbox" name="kokoswasser" id="kokoswasser">
+                                        </div>
+                                    </fieldset>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col medium-col-11 large-col-10">
+                            <div class="button-container">
+                                <button type="button" class="btn-back"><span>Zurück</span></button>
+                                <button type="button" class="btn-next"><span>Weiter</span></button>
+                            </div>
+                        </div>
+                    </div>
+
+
+                    <div class="row form-container center" id="section-7">
+                        <div class="col medium-col-11 large-col-10 form-section">
+                            <div class="row">
+                                <div class="col large-col-6 form-field">
+                                    <label for="vor-und-nachname"></label>
+                                    <input type="text" placeholder="Vor-und-Nachname" id="vor-und-nachname" name="vor-und-nachname" required>
+                                    <label for="email"></label>
+                                    <input type="email" placeholder="Deine E-Mail Adresse" id="email" name="email" required>
+                                    <label for="phone"></label>
+                                    <input type="text" placeholder="Deine Telefonnummer" id="phone" name="phone" required>
+                                    <label for="date" class="date-label"></label>
+                                    <input type="date" id="date" class="date-input" required>
+                                </div>
+
+                                <div class="col large-col-6 form-field">
+                                    <div class="order">
+                                        <h2>Bestellübersicht</h2>
+                                        <div class="bestelluebersicht">
+                                            <div class="order-summary">Keine Artikel ausgewählt</div>
+                                            <div class="summe">
+                                                <div class="weights">
+                                                    <div class="use"></div>
+                                                    <div class="free"></div>
+                                                </div>
+                                                <div>Gesamtsumme:</div><div class="total-price">0.00 €</div>
+                                            </div>
+                                            <div class="btn clear-selection">Auswahl entfernen</div>
+                                        </div>
+                                    </div>
+                                    <div class="datenschutz">
+                                        <label for="datenschutz">Ich habe die Datenschutzeerklärung gelesen und akzeptiert.</label>
+                                        <input type="checkbox" name="datenschutz" id="datenschutz" required>    
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col medium-col-11 large-col-10 form-section">
+                            <div class="button-container">
+                                <button type="button" class="btn-back"><span>Zurück</span></button>
+                                <button type="submit" id="Form-submit" class="btn-submit"><span>Jetzt bestellen</span></button>
+                            </div>
+                        </div>
+                    </div>
+                </form>
+            </div>
         </div>
     </section>
 
+    <div id="popup" class="popup">
+        <div class="popup-content">
+            <h2>Formular Bestätigung</h2>
+            <p>Dein Formular wurde erfolgreich gesendet. Vielen Dank!</p>
+            <button id="closePopup" onclick="closePopup()" class="btn">Schließen</button>
+        </div>
+    </div>
 
-    <section class="section section2" id="section2">
-        <div class="row">
-            <div class="col">
-                <h2>Wo es uns 24 hinzieht</h2>
-            </div>
-            <div class="col large-col-4">
-                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d66413.91386280015!2d18.039332840987274!3d42.63786920409652!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x134b8ba20835e87d%3A0x400ad50862bd500!2sDubrovnik%2C%20Kroatien!5e0!3m2!1sde!2sde!4v1719004324438!5m2!1sde!2sde"></iframe>
-            </div>
-            <div class="col large-col-8 gallery">
-                <div class="row ">
-                    <div class="col-6">
-                        <img class="lightbox" src="./images/gallery.jpg" alt="">
+    <div class="merkzettel-container" id="merkzettel-container">
+        <div class="zettel" id="zettel">
+            <img src="./images/zettel.png" alt="Merkzettel">
+            <span class="item-count-badge" id="item-count-badge">0</span>
+        </div>
+       
+        <div class="bestlluebersicht-container" id="bestelluebersicht">
+            <img id="merkzettel-close-btn" class="merkzettel-close-btn" src="./images/icons/zettel-close.svg" alt="Merkzettel schließen">
+            <div class="bestell-container">
+                <h2>Bestellübersicht:</h2>
+
+                <div class="bestelluebersicht">
+                    <h3>ausgewählte Artikel:</h3>
+                    <div class="order-summary"><p>Keine Artikel ausgewählt</p></div>
+                    <div class="summe">
+                        <div class="weights">
+                            <div class="use"></div>
+                            <div class="free"></div>
+                        </div>
+                        <div>Gesamtsumme:</div><div class="total-price">0.00 €</div>
                     </div>
-                    <div class="col-6">
-                        <img class="lightbox" src="./images/gallery2.jpg" alt="">
-                    </div>
-                    <div class="col-4">
-                        <img class="lightbox" src="./images/gallery3.jpg" alt="">
-                    </div>
-                    <div class="col-4">
-                        <img class="lightbox" src="./images/gallery4.jpg" alt="">
-                    </div>
-                    <div class="col-4">
-                        <img class="lightbox" src="./images/gallery5.jpg" alt="">
-                    </div>
+                    <div class="btn clear-selection">Auswahl entfernen</div> <!-- Button hinzugefügt -->
                 </div>
-            </div>
+            </div>        
         </div>
-    </section>
+        <div class="merkzettel-close" id="merkzettel-close"></div>
+
+    </div>
+    </div>
+
+
 
 
 
     <div class="mobilnav">
-            <img src="./images/icons/navicon.svg" alt="burger icon" id="navbtn">
-            <div class="mobilnavopen" id="navlistmobil">
+        <a href="../index.html">
+            <img src="./images/logo.svg" alt="" class="logomobil">
+        </a>
+        <img src="./images/icons/navicon.svg" class="navbtn" alt="burger icon" id="navbtn">
+        <div class="mobilnavopen" id="navlistmobil">
             <div id="navbtnclose"></div>
             <ul class="navlist">
-                <li><a class="navitem" href="#section1">Vorstellung</a></li>
-                <li><a class="navitem" href="#section2">Reiseziel</a></li>
-                <li>Impressionen</li>
+                <li><a href="#firstSection">Home</a></li>
+                <li><a href="#firstSection">Kontakt</a></li>
+                <li><a href="#firstSection">Anfahrt</a></li>
             </ul>
         </div>
     </div>
     <script src="./js/nav.js"></script>
     <script src="./js/navmob.js"></script>
     <script src="./js/lightbox.js"></script>
+    <script src="./js/form.js"></script>
+    <script src="./js/collapser.js"></script>
+    <script src="./js/form-calculate.js"></script>
 </body>
 
 </html>
